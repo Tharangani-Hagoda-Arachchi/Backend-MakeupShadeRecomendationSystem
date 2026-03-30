@@ -66,7 +66,7 @@ def crop_resize(image, box, target_size=(224, 224)):
 def preprocess_image(image_path, target_size=(224, 224)):
     img = cv2.imread(str(image_path))
     if img is None:
-        print(f"⚠  Image not found: {image_path}")
+        print(f" Image not found: {image_path}")
         return None
 
     box = detect_face(img)
